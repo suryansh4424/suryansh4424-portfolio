@@ -1,15 +1,12 @@
 "use client";
 
-import { motion, useMotionValueEvent, useScroll } from "motion/react";
-import Link from "next/link";
+import { useMotionValueEvent, useScroll } from "motion/react";
 import { useState } from "react";
 
-import { BrandContextMenu } from "@/components/brand-context-menu";
 import { CommandMenu } from "@/components/command-menu";
 import { DesktopNav } from "@/components/desktop-nav";
 import { MobileNav } from "@/components/mobile-nav";
 import { NavItemGitHub } from "@/components/nav-item-github";
-import { Suryansh4424Mark } from "@/components/suryansh4424-mark";
 import { ToggleTheme } from "@/components/toggle-theme";
 import { ToggleThemeBase } from "@/components/toggle-theme-base";
 import { MAIN_NAV } from "@/config/site";
@@ -17,7 +14,7 @@ import { MAIN_NAV } from "@/config/site";
 export function SiteHeader() {
   const { scrollY } = useScroll();
 
-  const [visible, setVisible] = useState(false);
+  const [, setVisible] = useState(false);
 
   useMotionValueEvent(scrollY, "change", (latestValue) => {
     setVisible(latestValue >= 200);

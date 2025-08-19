@@ -2,6 +2,8 @@
 
 ## Before Deployment
 
+- [ ] Run `npm run lint` to check for ESLint errors
+- [ ] Run `npm run fix-lint` if there are linting issues
 - [ ] Push all changes to GitHub
 - [ ] Ensure you have a Vercel account
 - [ ] Connect your GitHub repository to Vercel
@@ -45,14 +47,20 @@ If deployment fails:
 ## Quick Commands
 
 ```bash
+# Check for linting issues
+npm run lint
+
+# Fix linting issues automatically
+npm run fix-lint
+
 # Generate environment variables
-pnpm setup-env
+npm run setup-env
 
 # Test build locally
-pnpm build
+npm run build
 
 # Test start locally
-pnpm start
+npm run start
 ```
 
 ## Support

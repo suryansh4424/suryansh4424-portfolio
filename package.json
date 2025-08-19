@@ -35,7 +35,8 @@
     "upgrade:next": "npx @next/codemod@latest upgrade latest",
     "upgrade:tailwind": "npx @tailwindcss/upgrade@latest",
     "prepare": "husky",
-    "setup-env": "node scripts/setup-env.js"
+    "setup-env": "node scripts/setup-env.js",
+    "fix-lint": "node scripts/fix-lint.js"
   },
   "dependencies": {
     "@bprogress/next": "^3.2.12",
