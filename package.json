@@ -34,7 +34,8 @@
     "capture": "tsx --tsconfig ./tsconfig.scripts.json ./src/scripts/capture.mts",
     "upgrade:next": "npx @next/codemod@latest upgrade latest",
     "upgrade:tailwind": "npx @tailwindcss/upgrade@latest",
-    "prepare": "husky"
+    "prepare": "husky",
+    "setup-env": "node scripts/setup-env.js"
   },
   "dependencies": {
     "@bprogress/next": "^3.2.12",
