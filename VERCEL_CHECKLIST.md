@@ -12,9 +12,11 @@
 
 Set these in Vercel Dashboard → Settings → Environment Variables:
 
-- [ ] **APP_URL**: `https://your-project.vercel.app`
+- [ ] **APP_URL**: `https://your-project.vercel.app` (replace with your actual Vercel URL)
 - [ ] **BASE_URL**: `https://your-project.vercel.app` (same as APP_URL)
 - [ ] **CRON_SECRET**: `987668a3d487030a7a7099490d32f1ad0d6c53d6edb89227c253530c9a417f4a`
+
+**Important**: Set Environment to "Production", "Preview", and "Development" for all variables.
 
 ## Environment Variables (Optional)
 

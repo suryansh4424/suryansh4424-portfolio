@@ -35,9 +35,10 @@ You need to configure these environment variables in your Vercel project:
 3. Go to **Settings** → **Environment Variables**
 4. Add each variable:
    - **Name**: `APP_URL`
-   - **Value**: `https://your-project.vercel.app`
+   - **Value**: `https://your-project.vercel.app` (replace with your actual URL)
    - **Environment**: Production, Preview, Development
 5. Repeat for all variables
+6. **Important**: Make sure to set all three environments (Production, Preview, Development) for each variable
 
 ## Deployment Steps
 
@@ -94,10 +95,18 @@ If you're using a custom domain:
 
 If you encounter specific errors, check:
 
+### Environment Variable Issues
+
+- **"Secret does not exist"**: Don't use `@secret_name` in vercel.json, set variables directly in dashboard
+- **"Environment variable not found"**: Make sure variables are set for all environments (Production, Preview, Development)
+- **API routes failing**: Check that `BASE_URL` and `CRON_SECRET` are correctly set
+
+### Build Issues
+
 1. Vercel build logs for build-time errors
 2. Function logs for runtime errors
 3. Environment variable configuration
-4. Node.js version compatibility
+4. Node.js version compatibility (should be 20.x or 22.x)
 
 ## Support
 
