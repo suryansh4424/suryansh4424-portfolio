@@ -18,10 +18,10 @@ export const USER = {
   website: "https://github.com/suryansh4424",
   otherWebsites: ["https://leetcode.com/u/suryansh4424/", "https://www.linkedin.com/in/suryansh-rathore4424/"],
   dateOfBirth: "2002-06-27", // YYYY-MM-DD
-  jobTitle: "Upcoming Trainee",
+  jobTitle: "Trainee",
   jobs: [
     {
-      title: "Upcoming Trainee",
+      title: "Trainee",
       company: "Infosys",
       website: "https://www.infosys.com",
     },

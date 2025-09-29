@@ -65,3 +65,4 @@ After setting up, test these endpoints:
 - Check the main `DEPLOYMENT.md` file
 - Review `VERCEL_CHECKLIST.md` for complete setup
 - Run `npm run setup-env` to generate new values if needed
+
