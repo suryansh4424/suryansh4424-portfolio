@@ -1,6 +1,8 @@
 import { Accordion as AccordionPrimitive } from "radix-ui";
 import React from "react";
 
+import { CollapsibleList } from "@/components/collapsible-list";
+
 import { EXPERIENCES } from "../../data/experiences";
 import { Panel, PanelHeader, PanelTitle } from "../panel";
 import { ExperienceItem } from "./experience-item";
@@ -22,9 +24,11 @@ export function Experiences() {
         asChild
       >
         <div className="pr-2 pl-4">
-          {EXPERIENCES.map((experience, index) => {
-            return <ExperienceItem key={index} experience={experience} />;
-          })}
+          <CollapsibleList
+            items={EXPERIENCES}
+            max={2}
+            renderItem={(item) => <ExperienceItem experience={item} />}
+          />
         </div>
       </AccordionPrimitive.Root>
     </Panel>

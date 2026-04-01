@@ -35,6 +35,6 @@ export const SOCIAL_LINKS: SocialLink[] = [
     icon: "/assets/images/avatar-potrait.jpeg",
     title: "Resume",
     description: "Download PDF",
-    href: "https://drive.google.com/file/d/1e4lPQqPS3_p5LkGyBTAqiNj0AboH9SyL/view?usp=drivesdk",
+    href: "https://drive.google.com/file/d/1tlWfuaK5soPJFIl6pd1pJIN7pFvrOwAH/view?usp=drive_link",
   },
 ];

@@ -20,6 +20,7 @@ export type ExperiencePosition = {
 export type Experience = {
   company: string;
   companyLogo?: string;
+  location?: string;
   positions: ExperiencePosition[];
   current?: boolean;
 };

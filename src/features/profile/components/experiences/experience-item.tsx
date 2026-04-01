@@ -26,6 +26,12 @@ export function ExperienceItem({ experience }: { experience: Experience }) {
 
         <h3 className="font-heading text-lg leading-snug font-medium">
           {experience.company}
+          {experience.location && (
+            <span className="font-normal text-muted-foreground">
+              {" · "}
+              {experience.location}
+            </span>
+          )}
         </h3>
 
         {experience?.current && (

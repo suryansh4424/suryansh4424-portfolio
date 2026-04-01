@@ -3,6 +3,7 @@ import type { ProfilePage as PageSchema, WithContext } from "schema-dts";
 
 import { Confetti } from "@/components/confetti";
 import { ScrollTop } from "@/components/scroll-top";
+import { SectionJump } from "@/components/section-jump";
 import { SiteFooter } from "@/components/site-footer";
 import { VIETNAM_HOLIDAYS } from "@/config/site";
 import { USER } from "@/data/user";
@@ -27,7 +28,6 @@ export default function Page() {
       <script type="application/ld+json">
         {JSON.stringify(websiteJsonLd)}
       </script>
-
 
       <div className="max-w-screen overflow-x-hidden">
         <div className="mx-auto px-4 md:max-w-4xl">
@@ -61,7 +61,6 @@ export default function Page() {
           <Certifications />
           <Pattern />
 
-
           <SiteFooter />
         </div>
       </div>
@@ -70,6 +69,7 @@ export default function Page() {
 
       <Confetti datesWithoutYear={[USER.dateOfBirth, ...VIETNAM_HOLIDAYS]} />
 
+      <SectionJump />
       <ScrollTop />
     </>
   );

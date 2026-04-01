@@ -2,6 +2,34 @@ import type { Experience } from "../types/experiences";
 
 export const EXPERIENCES: Experience[] = [
   {
+    company: "Infosys",
+    location: "Mysore, India",
+    current: true,
+    positions: [
+      {
+        id: "infosys-1",
+        title: "System Engineer Trainee",
+        year: "Sep 2025 — Present",
+        employmentType: "TRAINEE",
+        icon: "code",
+        description:
+          "- Completed Generic Training covering Java (DSA, OOPs) and SQL/HSQL\n- Stream Training in React and Spring Boot, focusing on full-stack application development\n- Currently upskilling in Python and AI",
+        skills: [
+          "Java",
+          "DSA",
+          "OOPs",
+          "SQL",
+          "HSQL",
+          "React",
+          "Spring Boot",
+          "Python",
+          "AI",
+        ],
+        expanded: true,
+      },
+    ],
+  },
+  {
     company: "Glorious Insight",
     positions: [
       {
@@ -18,11 +46,11 @@ export const EXPERIENCES: Experience[] = [
           "Data Analysis",
           "Data Visualization",
           "SSMS",
-          "Problem-solving"
+          "Problem-solving",
         ],
         expanded: true,
-      }
-    ]
+      },
+    ],
   },
   {
     company: "Teachnook with Cognizance (IIT Roorkee)",
@@ -42,10 +70,10 @@ export const EXPERIENCES: Experience[] = [
           "CI/CD",
           "Agile",
           "Amazon Lex",
-          "Cloud Services"
+          "Cloud Services",
         ],
         expanded: true,
-      }
-    ]
-  }
+      },
+    ],
+  },
 ];

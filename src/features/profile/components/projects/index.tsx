@@ -20,11 +20,11 @@ export function Projects() {
 
       <AccordionPrimitive.Root
         type="multiple"
-        defaultValue={PROJECTS.map(project => project.id)}
+        defaultValue={PROJECTS.map((project) => project.id)}
       >
         <CollapsibleList
           items={PROJECTS}
-          max={4}
+          max={2}
           renderItem={(item) => <ProjectItem project={item} />}
         />
       </AccordionPrimitive.Root>

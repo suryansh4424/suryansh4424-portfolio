@@ -9,6 +9,13 @@ export const TECH_STACK: TechStack[] = [
     categories: ["Language"],
   },
   {
+    key: "typescript",
+    title: "TypeScript",
+    href: "https://www.typescriptlang.org/",
+    categories: ["Language"],
+    icon: "https://cdn-icons-png.flaticon.com/512/5968/5968381.png",
+  },
+  {
     key: "python",
     title: "Python",
     href: "https://www.python.org/",
@@ -57,6 +64,13 @@ export const TECH_STACK: TechStack[] = [
     href: "https://nodejs.org/",
     categories: ["Runtime"],
   },
+  {
+    key: "springboot",
+    title: "Spring Boot",
+    href: "https://spring.io/projects/spring-boot",
+    categories: ["Framework"],
+    icon: "https://cdn-icons-png.flaticon.com/512/919/919836.png",
+  },
 
   // Styling & UI
   {
@@ -73,6 +87,13 @@ export const TECH_STACK: TechStack[] = [
     href: "https://www.mongodb.com/",
     categories: ["Database"],
     icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThmT8HtltidnDUJvGcRYzg8B9h8zM-2O-FZw&s",
+  },
+  {
+    key: "sql",
+    title: "SQL",
+    href: "https://www.w3schools.com/sql/",
+    categories: ["Database"],
+    icon: "https://cdn-icons-png.flaticon.com/512/4248/4248443.png",
   },
 
   // Cloud & DevOps

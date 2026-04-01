@@ -10,9 +10,11 @@ import type { Certification } from "../../types/certifications";
 export function CertificationItem({
   className,
   certification,
+  showDate = true,
 }: {
   className?: string;
   certification: Certification;
+  showDate?: boolean;
 }) {
   return (
     <a
@@ -57,8 +59,12 @@ export function CertificationItem({
             @<span className="ml-0.5">{certification.issuer}</span>
           </span>
 
-          <span className="flex h-4 w-px shrink-0 bg-border" />
-          <span>{dayjs(certification.issueDate).format("DD.MM.YYYY")}</span>
+          {showDate && (
+            <>
+              <span className="flex h-4 w-px shrink-0 bg-border" />
+              <span>{dayjs(certification.issueDate).format("DD.MM.YYYY")}</span>
+            </>
+          )}
         </p>
       </div>
 

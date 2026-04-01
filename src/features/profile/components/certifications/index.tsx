@@ -3,6 +3,7 @@ import { CollapsibleList } from "@/components/collapsible-list";
 import { CERTIFICATIONS } from "../../data/certifications";
 import { Panel, PanelHeader, PanelTitle } from "../panel";
 import { CertificationItem } from "./certification-item";
+import { InfosysCourses } from "./infosys-courses";
 
 export function Certifications() {
   return (
@@ -20,6 +21,8 @@ export function Certifications() {
         items={CERTIFICATIONS}
         renderItem={(item) => <CertificationItem certification={item} />}
       />
+
+      <InfosysCourses />
     </Panel>
   );
 }

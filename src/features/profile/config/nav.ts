@@ -15,4 +15,8 @@ export const NAV_LINKS = [
     title: "Certs",
     href: "#certs",
   },
+  {
+    title: "Courses",
+    href: "#courses",
+  },
 ];
