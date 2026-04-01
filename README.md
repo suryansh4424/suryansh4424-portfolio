@@ -1,7 +1,7 @@
 
 # Portfolio Website
 
-This is my personal portfolio website: [suryansh4424-portfolio-nope.vercel.app](https://suryansh4424-portfolio-nope.vercel.app/)  
+This is my personal portfolio website: [suryansh4424-portfolio-nope.vercel.app](https://suryansh4424-portfolio.vercel.app/)  
 
 Based on the original [chanhdai.com](https://github.com/ncdai) repo, I customized and expanded it with new sections, styling tweaks, and additional features to reflect my own work and journey.  
 
